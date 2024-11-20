@@ -1,0 +1,209 @@
+/*variáveis*/
+:root{
+    --backgroundColor: #f0f0f0;
+    --cardColor: #fff;
+    --shadowColor: rgba(0, 0, 0, 0.2);
+}
+
+/*fontes*/
+
+/*reset*/
+html, body{
+    margin:0;
+    height: 100%;
+}
+
+/*estilos básicos*/
+body{
+    background-color: var(--backgroundColor);
+}
+
+#content{
+    display: flex;
+}
+
+article{
+    background-color: var(--cardColor);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    max-width: 20%;
+    box-shadow: 0 0 10px var(--shadowColor);
+}
+
+article img{
+    width: 50%;
+}
+
+form{
+    margin: 20px;
+}
+
+div{
+    margin: 100px 20px;
+}
+
+/* Geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Título principal */
+h1, h2 {
+    text-align: center;
+    color: #4CAF50;
+    margin: 20px 0;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    justify-content: center;
+    background-color: #4CAF50;
+}
+
+.tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    text-align: center;
+    border-bottom: 3px solid transparent;
+}
+
+.tab:hover {
+    background-color: #45a049;
+}
+
+.tab.active {
+    background-color: #45a049;
+    border-bottom: 3px solid white;
+}
+
+/* Conteúdo das abas */
+.content {
+    display: none;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content.active {
+    display: block;
+}
+
+/* Formulários */
+form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+form input:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Cards */
+#content {
+    max-width: 800px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: calc(50% - 20px); /* Ajustável conforme necessário */
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #4CAF50;
+}
+
+.card p {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: #555;
+}
+
+/* Estilo básico para o alerta */
+.alert {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-size: 16px;
+    display: none; /* Inicialmente, o alerta está escondido */
+}
+
+/* Alerta de sucesso */
+.alert.success {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Alerta de aviso */
+.alert.warning {
+    background-color: #FF9800;
+    color: white;
+}
+
+/* Esconde o alerta */
+.hidden {
+    display: none;
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .card {
+        width: calc(100% - 20px);
+    }
+}
+

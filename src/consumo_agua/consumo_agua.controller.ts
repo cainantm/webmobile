@@ -14,8 +14,8 @@ export class ConsumoAguaController {
     @Post('historico')
     async getConsumoHistorico(
         @Body('userId') userId:number,
-        @Body('dataInicio') dataInicio:string,
-        @Body('dataFim') dataFim:string
+        @Body('dataInicio') dataInicio:Date,
+        @Body('dataFim') dataFim:Date
     ){
         const inicio = new Date(dataInicio);
         const fim = new Date(dataFim);
